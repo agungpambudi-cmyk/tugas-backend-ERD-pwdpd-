@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="admin.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+
+    <title>Hello, world!</title>
+
+    <script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+  animationEnabled: true,
+  theme: "light2", // "light1", "light2", "dark1", "dark2"
+  title:{
+    text: "PEMINJAMAN BUKU"
+  },
+  axisY: {
+    title: "SMKN 1 SEMARANG"
+  },
+  data: [{        
+    type: "column",  
+    showInLegend: true, 
+    legendMarkerColor: "grey",
+    legendText: "MMbbl = one thousand books",
+    dataPoints: [      
+      { y: 90, label: "JANUARY" },
+      { y: 30,  label: "FEBRUARI" },
+      { y: 25,  label: "MARET" },
+      { y: 52,  label: "APRIL" },
+      { y: 19,  label: "MEI" },
+      { y: 44, label: "JUNI" },
+      { y: 19,  label: "JULI" },
+      { y: 89,  label: "AGUSTUS" }
+    ]
+  }]
+});
+chart.render();
+
+}
+</script>
+
+  </head>
+  <body>
+          <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
+        <a class="navbar-brand" href="#">INFORMASI / <b> PERPUS SMKN 1 SEMARANG</b></a>
+      
+          <form  class="form-inline my-2 my-lg-0 ml-auto">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          <div class="icon ml-4">
+            <h5>
+              <i class="far fa-envelope mr-3" data-toggle="tooltip" title="Kotak Masuk"></i>
+              <i class="fas fa-bell mr-3" data-toggle="tooltip" title="Nontifikasi"></i>
+              <i class="fas fa-sign-out-alt mr-3" data-toggle="tooltip" title="Sign Out"></i>
+            </h5>
+          </div>
+        </div>
+      </nav>
+      <div class="row no-gutters mt-5">
+        <div class="col-md-2 bg-dark mt-2  pr-3 pt-4">
+                <ul class="nav flex-column ml-3 mb-5">
+        <li class="nav-item">
+          <a class="nav-link active text-white" href="dashboard.html"><i class="fas fa-tachometer-alt mr-2"></i> Dashboard</a><hr class="bg-secondary">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="anggota.html"><i class="fas fa-users mr-2"></i> Daftar Anggota</a><hr class="bg-secondary">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="pegawai.html"><i class="fas fa-chalkboard-teacher mr-2"></i> Daftar Pegawai</a><hr class="bg-secondary">
+        </li>
+        <li class="nav-item">
+          
+        <li class="nav-item">
+          <a class="nav-link text-white" href="jadwal.html"><i class="fas fa-clock mr-2"></i> Jadwal Perpustakaan </a><hr class="bg-secondary">
+        </li>
+       <li class="nav-item">
+          <a class="nav-link text-white" href="peminjaman.html"><i class="fas fa-chart-bar"></i> Informasi Peminjaman</a><hr class="bg-secondary">
+        </li>
+      </ul>
+        </div>
+        <div class="col-md-10 p-5 pt-3">
+          <h3><i class="fas fa-chart-bar"></i></i> CHART PEMINJAM</h3><hr>
+
+         <a href="" class="btn btn-primary mb-3"><i class="fas fa-plus-square mr-2"></i> peminjam</a>
+         
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+        </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="admin.js"></script>
+  </body>
+</html>
